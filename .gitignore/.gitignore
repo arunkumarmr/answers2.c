@@ -1,0 +1,111 @@
+What is #include <stdio.h>?
+        Means it will include the header file before compiling the code. " include" gives command to include something. 
+"stdio" stands for "standard input output". As it is a header file so .h extension is there. 
+It contains some standard functions related to input and output such as "printf", "scanf"..
+
+
+What is printf?
+        printf() i a library function defined under stdio.h header file. 
+this function is used to print something in the console.
+this function is a integer type function which means this function returns an integer to the caller function. 
+printf() returns the number of characters it has printed in the console.
+
+
+What is main?
+        main is yet another function.Actually main is an indicator for the CPU/OS from where to start execution.
+
+
+What is a variable?
+        C Programming/Variables.Variables are simply names used to refer to some location in memory – a location that holds a 
+ value with which we are working. It may help to think of variables as a placeholder for a value. 
+ You can think of a variable as being equivalent to its assigned value.
+ 
+ 
+ What is type of a variable?
+       A variable is just a named area of storage that can hold a single value (numeric or character). 
+The C language demands that you declare the name of each variable that you are going to use and its type,
+or class, before you actually try to do anything with it.
+The Programming language C has two main variable types
+Local Variables
+Global Variables
+
+
+What is & operator?
+      The addressing operator.The address-of operator is a unary operator represented by an ampersand (&).
+      
+      
+What is %d in printf and scanf?   
+       Scanf() being a primitive function doesn't detect datatype of variable to be scanned.
+       Therefore programmers explicitly need to specify datatype of entity to be input.
+ex : int num;
+     scanf(“%d”,&num);
+
+Even though we declared num as int , scanf () isn't “smart” enough to autodetect data type.
+%d is a type of format specifier that aids scanf() . It may also be used to achieve formatted input or output.
+
+      printf(“%d”,&var);
+var is a variable name..
+here
+in every printf statement, content within the double quote is printed.
+in above scenario it does the same..
+first %d represents the first variable after comma if there are many %d.
+here variable name is var so it prints var value.
+%d just convert it into INTEGER.
+
+
+What is the meaning of compilation of a program?
+      Compilation is the process of converting one or more high-level sources 
+ (code in a high level programming language, generally in a textual form) into an executable, 
+ which is meant to be executed directly by the CPU or by a program,  and is generally in a non-textual form.
+ 
+ 
+What is the meaning of running a program?
+      Execution in computer and software engineering is the process by which a computer or a virtual machine
+performs the instructions of a computer program. The instructions in the program trigger sequences of simple actions 
+on the executing machine. 
+      Those actions produce effects according to the semantics of the instructions in the program
+
+
+List all syntax errors and reasons for the syntax errors.
+       Most frequent syntax errors are:
+       
+Missing Parenthesis (})
+Printing the value of variable without declaring it
+Missing semicolon like this:
+
+// C program to illustrate
+// syntax error
+#include<stdio.h>
+void main()
+{
+    int x = 10;
+    int y = 15; 
+     
+    printf("%d", (x, y)) // semicolon missed
+}
+Run on IDE
+Error:
+
+error: expected ';' before '}' token
+Syntax of a basic construct is written wrong. For example : while loop
+// C program to illustrate
+// syntax error
+#include<stdio.h>
+int main(void)
+{
+    // while() cannot contain "." as an argument.
+    while(.) 
+    {
+        printf("hello");
+    }
+    return 0;
+}
+Run on IDE
+Error:
+
+error: expected expression before '.' token
+     while(.) 
+In the given example, the syntax of while loop is incorrect. This causes a syntax error
+
+
+       
